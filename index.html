@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./validater.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="content">
+      <form action="" class="form">
+        <div class="form-group">
+          <label for="" class="form-group__label">Name</label>
+          <input name="name" rules="require" type="text" class="form-group__input">
+          <div class="error">
+
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="" class="form-group__label">Email</label>
+          <input name="email" rules="require|email" type="email" class="form-group__input">
+          <div class="error">
+
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="" class="form-group__label">Password</label>
+          <input name="password" rules="require|min:6" type="password" class="form-group__input">
+          <div class="error">
+
+          </div>
+        </div>
+        <div class="form-group">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script>
+    validator("form")
+  </script>
+</body>
+
+</html>
